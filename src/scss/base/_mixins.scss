@@ -1,0 +1,35 @@
+@use 'variables' as var;
+/*
+@mixin heading($color: blue, $border-radius: false) {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: $color;
+    letter-spacing: 1px;
+    background-color: darkgreen;
+
+    @if $border-radius {
+        border-radius: 1rem;
+    }
+}
+*/
+
+@mixin telefono {
+    @media (min-width: var.$telefono) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: var.$tablet) {
+        @content;
+    }
+}
+@mixin computadora {
+    @media (min-width: var.$computadora) {
+        @content;
+    }
+}
+@mixin computadoraXL {
+    @media (min-width: var.$computadoraXL) {
+        @content;
+    }
+}
